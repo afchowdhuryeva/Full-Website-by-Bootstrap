@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+
 }
 body{
     font-family: sans-serif;
@@ -19,7 +19,7 @@ body{
     padding: 0;
 }
 .navbar-brand{
-    font-size: 3rem;
+    font-size: 2.3rem;
     /* color: rgb(187, 60, 60); */
     padding-left: 2rem;
     font-weight: 600;
@@ -48,6 +48,7 @@ body{
 #header{
     background-image: linear-gradient(to left ,#dab44b, #c7eb26);
     padding-top: 5%;
+    border-top-left-radius: 80% 10%;
 }
 .pro-title{
     font-size: 2.5rem;
@@ -79,10 +80,10 @@ body{
 #services{
     padding: 6rem 0;
 }
-.service-title{
+.title{
     font-weight: 600;
 }
-.service-title::before{
+.title::before{
     content: "";
     background-image: linear-gradient(to left , #c7eb26,#dab44b);
     height: .3rem;
@@ -91,6 +92,17 @@ body{
     margin-right: auto;
     display: block;
     transform: translateY(4rem);
+}
+.title::after{
+    content: "";
+    background-image: linear-gradient(to left , #879e22,#463609);
+    height: .3rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: block;
+    transform: translateY(1rem);
 }
 .service-img{
     width: 5rem;
@@ -111,4 +123,104 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     font-style: italic;
+}
+.btn{
+    border: 3px solid #c7eb26;
+    border-radius: 1.5rem;
+    transition: all 300ms ease;
+}
+.btn:hover{
+    transition: all 300ms ease;
+    background-image: linear-gradient(to left ,#dab44b, #c7eb26);
+}
+
+
+/* about */
+
+
+
+#about{
+    background-image: linear-gradient(to right ,#dab44b, #c7eb26);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-top-left-radius: 80% 10%;
+    border-bottom-right-radius: 80% 10%;
+}
+.about-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+#about ul li{
+    margin: 1rem 0;
+}
+
+/* testimonials */
+
+
+#testimonials{
+    margin: 3rem 0;
+}
+.testimonials{
+    border-left: 3px solid #c7eb26;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.testimonials img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.user-details{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+/* social-media */
+
+#social-media{
+    background: #f8f9fa;
+    padding: 7rem 0;
+}
+#social-media p{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.social-icons img{
+    width: 5rem;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-1rem);
+}
+
+
+/* contact */
+
+#contact{
+    color: var(--secondary-color);
+    background-image: linear-gradient(to left ,#dab44b, #c7eb26);
+}
+.contact-img{
+    width: 100%;
+}
+.contact-box{
+    padding: 1.4rem;
+}
+.logo{
+    margin-bottom: 2rem;
+}
+.contact-box .fas{
+    margin-right: .8rem;
+    font-size: 1.7rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: .6rem;
+    border-radius: 2px;
+    background-image: linear-gradient(to left ,#dab44b, #c7eb26);
+}
+.last-btn{
+    margin-top: 2.3rem;
 }
